@@ -11,6 +11,7 @@
   f = fetch --prune
   l = log --oneline
   p = push
+  po = push origin
   s = status -sb -unormal
   v = log --graph --all --format=\"%C(auto)%h%C(reset) %C(auto)%d%C(reset) %s %C(yellow)- %cn, %cd%C(reset)\" --date=relative
   v2 = log --graph --all --format=\"%C(auto)%h%C(reset) %C(auto)%d%C(reset) %s %C(yellow)- %cn, %cd%C(reset)\"
