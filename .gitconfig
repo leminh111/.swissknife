@@ -15,6 +15,9 @@
   s = status -sb -unormal
   v = log --graph --all --format=\"%C(auto)%h%C(reset) %C(auto)%d%C(reset) %s %C(yellow)- %cn, %cd%C(reset)\" --date=relative
   v2 = log --graph --all --format=\"%C(auto)%h%C(reset) %C(auto)%d%C(reset) %s %C(yellow)- %cn, %cd%C(reset)\"
+  v3 = log --graph --all --no-merges --format=\"%C(auto)%h%C(reset) %C(auto)%d%C(reset) %s %C(yellow)- %cn, %cd%C(reset)\" --date=relative
+  lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'
+  lg2 = log --graph --no-merges --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'
 
 [core]
   editor = nvim
@@ -24,3 +27,6 @@
 
 [diff]
   tool = vimdiff
+
+[merge]
+  conflictstyle = diff3
