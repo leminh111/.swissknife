@@ -19,6 +19,8 @@
   lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'
   lg2 = log --graph --no-merges --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'
   vall = !git log --graph --decorate $(git rev-list -g --all)
+  dg = diff origin/green...
+  bg = lg2 origin/green..
 
 [core]
   editor = nvim
